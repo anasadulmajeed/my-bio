@@ -1,0 +1,10 @@
+@import @import "normalize.css";
+$mainBlue: #2f5572;
+.back{
+	background-color:$mainBlue;
+	margin:2px 3px;
+	padding:2px;
+	width:100%;
+	columns:300px;
+
+}
