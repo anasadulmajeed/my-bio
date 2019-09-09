@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("alert(\"from app.js\");\r\nconsole.log(\"hi\");\r\nalert(\"Bismillahirahmaniraheem\")\r\nconsole.log(\"Alhamdulilah\")\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ })
 

@@ -1,23 +1,24 @@
-var gulp 		  = require('gulp'),
-    settings     = require('./settings'),
+var gulp 		    = require('gulp'),
+    settings    = require('./settings'),
 	  watch 		  = require('gulp-watch'),
-	  browsersync  = require('browser-sync').create();
+	  browsersync = require('browser-sync').create();
 
 gulp.task('watch', function() {
 	browsersync.init({
       server : {
-         baseDir : "app", 
+        notify:false,
+        baseDir : "app", 
       }
-   });
+  });
 
 
-   gulp.watch(settings.fileLocation + 'index.html', function() {
-      browsersync.reload();
-   });
+  gulp.watch('./app/index.html').on('change', 
+      browsersync.reload
+  );
 
 
-   gulp.watch(settings.fileLocation + 'styles/**/*.css', gulp.parallel('waitForStyles'));
-   gulp.watch(settings.fileLocation + 'scripts/**/*.js', gulp.parallel('waitForScripts'));
+  gulp.watch(settings.fileLocation + 'styles/**/*.css', gulp.parallel('waitForStyles'));
+  gulp.watch(settings.fileLocation + 'scripts/**/*.js', gulp.parallel('waitForScripts'));
    
 });
 

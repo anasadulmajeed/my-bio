@@ -1,0 +1,19 @@
+.site-header {
+	background-color: rgba($mainBlue, 0.3);
+
+	&__heading {
+		margin: 10px 0 6px 0;
+	    font-family: 'Source Sans Pro', sans-serif;
+	    text-transform: uppercase;
+	    font-size: 80%;
+	    font-weight:500;
+	}
+
+	&__heading2 {
+		
+		font-weight:100;
+		font-size: 132%;
+    	line-height: 1em;
+    	margin: -20 0 15px 0;
+	}
+}

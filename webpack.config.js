@@ -1,8 +1,9 @@
 var path = require('path');
+var settings = require('./gulp/tasks/settings');
 	
 module.exports = {
 	entry : {
-		App : "./app/assets/scripts/App.js"
+		App : settings.fileLocation + "scripts/App.js"
 	},
 
 	output : {
