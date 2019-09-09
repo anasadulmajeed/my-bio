@@ -1,19 +1,69 @@
-.box-a{
-	background-color: LightGray;
-	padding:30px;
-	border:3px solid black;
-	margin-bottom:20px;
-	margin-top:5px;
-	width:250px;
-	height:150px;
-	box-sizing:border-box;
-	
+html {
+	background-color:$lightGreen;
 
 }
 
-.box-b{
-	background-color: orange;
-	width:316px;
-	height:150px;
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 87%;
+
+}
+header {
+	margin-top:20px;
+	padding:20px 0 20px 0;
+	color:$somewhatGreen;
+
+}
+
+header h1 {
+	margin:0;
+	font-weight:normal;
+	font-size:165%;
+}
+
+header p {
+	margin:0;
+}
+
+.container {
+	max-width: 940px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	padding:0 40px;
 	
 }
+
+.content-area{
+	border-top:3px solid $veryLightGreen;
+	border-bottom:3px solid $veryLightGreen;
+	@mixin clearfix;
+}
+
+.main-area{
+	width:66%;
+	float:left;
+	padding:0 40px 0 0;
+	
+}
+
+.sidebar { 
+	width:34%;
+	float:left;
+	background-color: $veryLightGreen;
+	padding:20px 40px;
+	font-size:85%;
+
+}
+
+footer {
+	text-align:center;
+	padding:20px 0;
+	font-size:85%;
+	color:#999;
+}
+
