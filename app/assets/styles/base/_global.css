@@ -1,12 +1,9 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	color:#333;
+	color:green;
+	
 }
 
-html {
-  background: #eee8d5 url(../img/bg.jpg) top center no-repeat fixed;
-  background-size: cover; 
-}
 
 img{
 	max-width: 100%;
@@ -19,4 +16,16 @@ img{
 
 a{
 	color:$mainOrange;
+}
+
+h1{
+	color:orange;
+	text-align:center;
+}
+header p{
+	color:green;
+	
+}
+footer{
+	color:orange;
 }
