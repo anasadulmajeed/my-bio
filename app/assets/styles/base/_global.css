@@ -14,19 +14,49 @@ body {
 }
 header {
 	margin-top:20px;
-	padding:20px 0 20px 0;
+	padding:20px 0 0 0;
 	color:$somewhatGreen;
 
+	h1 {
+		margin:0;
+		font-weight:normal;
+		font-size:165%;
+	}
+
+	p {
+		margin:0;
+		margin-bottom:10px;
+	}
 }
 
-header h1 {
-	margin:0;
-	font-weight:normal;
-	font-size:165%;
-}
 
-header p {
-	margin:0;
+
+.site-nav {
+	margin-top:20px;
+	li {
+		list-style:none;
+		float:left;
+		margin-right:5px;
+	}
+
+	ul{
+		margin:0;
+		padding:0;
+		@mixin clearfix;
+	}
+
+	a {
+		text-decoration:none;
+		color:$lightGreen;
+		padding:10px 20px;
+		border:3px solid $veryLightGreen;
+		border-bottom:none;
+		display:block;
+		&:hover{
+			background-color:$veryLightGreen;
+			transition:0.3s ease-out;
+		}
+	}
 }
 
 .container {
@@ -35,10 +65,12 @@ header p {
 	margin-right:auto;
 	background-color:white;
 	padding:0 40px;
+
 	
 }
 
 .content-area{
+
 	border-top:3px solid $veryLightGreen;
 	border-bottom:3px solid $veryLightGreen;
 	@mixin clearfix;
@@ -59,6 +91,8 @@ header p {
 	font-size:85%;
 
 }
+
+
 
 footer {
 	text-align:center;
