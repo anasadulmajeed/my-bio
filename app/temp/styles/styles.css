@@ -349,37 +349,24 @@ template {
   display: none;
 }
 
-body{
-	font-family: 'Roboto', sans-serif;
-	color:green;
+.box-a{
+	background-color: LightGray;
+	padding:30px;
+	border:3px solid black;
+	margin-bottom:20px;
+	margin-top:5px;
+	width:250px;
+	height:150px;
+	box-sizing:border-box;
 	
+
 }
 
-img{
-	max-width: 100%;
-	height:auto;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-a{
-	color:#d59541;
-}
-
-h1{
-	color:orange;
-	text-align:center;
-}
-
-header p{
-	color:green;
+.box-b{
+	background-color: orange;
+	width:316px;
+	height:150px;
 	
-}
-
-footer{
-	color:orange;
 }
 
 .site-header {
