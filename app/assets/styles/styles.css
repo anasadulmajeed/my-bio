@@ -2,8 +2,11 @@
 @import "base/_mixins";
 @import "base/_variables";
 @import "base/_global";
-@import "modules/_site-header";
 @import "modules/_wrapper";
-@import "modules/_primary-nav";
-@import "modules/_sprite";
+@import "modules/_content-area";
+@import "modules/_site-header";
+@import "modules/_page-nav";
+@import "modules/_btn";
+@import "modules/_modal";
+@import "modules/_site-footer";
 

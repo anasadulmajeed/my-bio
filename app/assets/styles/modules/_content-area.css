@@ -1,0 +1,19 @@
+.content-area {
+	border-top:3px solid $veryLightGreen;
+	border-bottom:3px solid $veryLightGreen;
+	@mixin clearfix;
+
+	&__main-area{
+		width:66%;
+		float:left;
+		padding:0 40px 0 0;
+	}
+
+	&__sidebar { 
+		width:34%;
+		float:left;
+		background-color: $veryLightGreen;
+		padding:20px 40px;
+		font-size:85%;
+	}
+}

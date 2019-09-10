@@ -1,19 +1,24 @@
 .site-header {
-	background-color: rgba($mainBlue, 0.3);
+	margin-top:20px;
+	padding:20px 0 0 0;
+	color:$somewhatGreen;
 
-	&__heading {
-		margin: 10px 0 6px 0;
-	    font-family: 'Source Sans Pro', sans-serif;
-	    text-transform: uppercase;
-	    font-size: 80%;
-	    font-weight:500;
+	&__btn-container{
+		@mixin atMedium{ 
+			float: right;
+			margin-top:-10px;
+		}
 	}
 
-	&__heading2 {
-		
-		font-weight:100;
-		font-size: 132%;
-    	line-height: 1em;
-    	margin: -20 0 15px 0;
+	h1 {
+		margin:0;
+		font-weight:normal;
+		font-size:165%;
 	}
+
+	p {
+		margin:0;
+		margin-bottom:10px;
+	}
+
 }
