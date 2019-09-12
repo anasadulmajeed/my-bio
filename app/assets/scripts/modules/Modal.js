@@ -15,6 +15,8 @@ class Modal {
 		//clicking the x close modal button
 		this.closeModalButton.click(this.closeModal.bind(this));
 
+		
+
 		//pushes the escape key
 	}
 
@@ -26,6 +28,8 @@ class Modal {
 	closeModal(){
 		this.modal.removeClass("modal--is-visible");
 	}
+
+
 
 }
 

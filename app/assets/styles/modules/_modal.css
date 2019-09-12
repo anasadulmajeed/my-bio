@@ -29,25 +29,36 @@
 		cursor:pointer;
 		&:hover{
 			color:$mainOrange;
+
 		}
+
+
 	}
 
 	&__video{
-		position:absolute;
-		top:100px;
-		left:260px;
-		right:auto;
-		bottom:auto;
-		transform:scale(1);
-		transition:1s ease-in;
-		&:hover{  
-			transform:scale(1.099);
-			transition:2s ease-out;
-			cursor:pointer;
-		}
+		
+		background-color:white;
+	    height: 100%;
+	    position:relative;
+	    margin:0 auto;
+	    padding:3em;
+	    
+	    
+	    background-color:rgba($mainBlue,0);
+	    @media (min-width: 60em) {
+	     height:75%;
+	  	 margin:10% auto;
+	  	 max-height: 57em;
+	     max-width:66em;
+	     width:85%;
+	  	}
+		> iframe, > div{
 
-		&--border{
-			border:20px solid $lightgrey;
-		}
+			border:10px solid $lightgrey;
+			width:100%;
+			height:100%;
+
+	    }
+
 	}
 }

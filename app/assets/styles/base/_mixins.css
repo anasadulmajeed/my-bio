@@ -25,3 +25,9 @@
 		display: table;
 	}
 }
+
+@define-mixin inOverlay {
+	@media (min-width: 60em){
+		@mixin-content;
+	}
+}
